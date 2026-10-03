@@ -1,0 +1,54 @@
+body.dashboard {
+  display: block;
+  align-items: initial;
+  justify-content: initial;
+}
+
+.topbar {
+  background: #1e3a5f;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topbar h1 {
+  color: white;
+  font-size: 22px;
+}
+
+.content {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+h2 {
+  color: #1e3a5f;
+}
+
+.assignment {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border-left: 5px solid #4a90d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.assignment.urgent {
+  border-left-color: #e53e3e;
+}
+
+.assignment h3 {
+  margin: 0 0 4px;
+}
+
+.assignment p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
