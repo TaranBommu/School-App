@@ -89,3 +89,49 @@ textarea {
   padding: 10px 8px;
   border-bottom: 1px solid #eee;
 }
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.badge.present {
+  background: #e6f4ea;
+  color: #276749;
+}
+
+.badge.late {
+  background: #fff4e5;
+  color: #b7791f;
+}
+
+.badge.absent {
+  background: #fde8e8;
+  color: #c53030;
+}
+
+.chat {
+  background: #f7f9fc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  margin: 8px 0;
+}
+
+.bubble.bot {
+  background: #e2e8f0;
+}
+
+.bubble.user {
+  background: #1e3a5f;
+  color: white;
+  margin-left: auto;
+}
