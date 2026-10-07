@@ -52,3 +52,40 @@ h2 {
   color: #666;
   font-size: 14px;
 }
+
+.logout {
+  color: white;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.attendance {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance th,
+.attendance td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}

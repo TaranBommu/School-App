@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard | School App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+  <body class="dashboard">
+    <header class="topbar">
+      <h1>School App</h1>
+      <span>Welcome, Ms. Rivera (Teacher)</span>
+      <a href="login.html" class="logout">Log out</a>
+    </header>
+
+    <main class="content">
+      <section class="panel">
+        <h2>Add Homework</h2>
+        <form>
+          <label for="class">Class</label>
+          <select id="class">
+            <option>Algebra 1 (Period 2)</option>
+            <option>Algebra 1 (Period 5)</option>
+          </select>
+
+          <label for="title">Assignment title</label>
+          <input type="text" id="title" placeholder="Problem Set 5">
+
+          <label for="details">Details</label>
+          <textarea id="details" rows="3" placeholder="Pages 112-115, odd problems"></textarea>
+
+          <label for="due">Due date</label>
+          <input type="date" id="due">
+
+          <button type="submit">Post Assignment</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Posted Assignments</h2>
+        <div class="assignment">
+          <h3>Problem Set 4</h3>
+          <p>Algebra 1 (Period 2) &middot; Due tomorrow</p>
+        </div>
+        <div class="assignment">
+          <h3>Quiz Review Sheet</h3>
+          <p>Algebra 1 (Period 5) &middot; Due Thursday</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Today's Attendance</h2>
+        <table class="attendance">
+          <tr>
+            <th>Student</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Alex Kim</td>
+            <td>
+              <select>
+                <option>Present</option>
+                <option>Absent</option>
+                <option>Late</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Jordan Lee</td>
+            <td>
+              <select>
+                <option>Present</option>
+                <option>Absent</option>
+                <option>Late</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Sam Patel</td>
+            <td>
+              <select>
+                <option>Present</option>
+                <option>Absent</option>
+                <option>Late</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <button>Save Attendance</button>
+      </section>
+    </main>
+  </body>
+</html>

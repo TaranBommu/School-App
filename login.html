@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In | Balvihar Login</title>
+    <title>Log In | School App</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main class="card">
-      <h1>Balvihar Login</h1>
+      <h1>School App</h1>
       <p class="subtitle">Log in to continue</p>
 
       <form>
@@ -28,5 +28,21 @@
         <button type="submit">Log In</button>
       </form>
     </main>
+      <script>
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const role = document.getElementById("role").value;
+
+    if (role === "Student") {
+      window.location.href = "student.html";
+    } else if (role === "Teacher") {
+      window.location.href = "teacher.html";
+    } else {
+      window.location.href = "parent.html";
+    }
+  });
+</script>
   </body>
 </html>
